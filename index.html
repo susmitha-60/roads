@@ -3,150 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Road Safety Services</title>
+<title>Road Safety Services Portal</title>
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 body{
-background:#f4f7fc;
-line-height:1.6;
+    background:#f4f6f9;
 }
 
 header{
-background:#003366;
-color:white;
-padding:20px;
-text-align:center;
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
 nav{
-background:#001f3f;
-padding:15px;
-text-align:center;
+    background:#1565c0;
+    padding:15px;
+    text-align:center;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:15px;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
 }
 
 .hero{
-height:90vh;
-background:
-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url('https://images.unsplash.com/photo-1506521781263-d8422e82f27a');
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
+    height:80vh;
+    background:url('https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
 }
 
-.hero-content h1{
-font-size:60px;
-margin-bottom:20px;
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:10px;
 }
 
-.hero-content p{
-font-size:24px;
+.hero h1{
+    font-size:50px;
 }
 
 section{
-padding:60px 10%;
+    padding:50px 8%;
 }
 
-h2{
-text-align:center;
-margin-bottom:30px;
-color:#003366;
+.section-title{
+    text-align:center;
+    color:#0d47a1;
+    margin-bottom:30px;
 }
 
 .cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
 }
 
 .card{
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,0.15);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 .card img{
-width:100%;
-height:220px;
-object-fit:cover;
+    width:100%;
+    height:220px;
+    object-fit:cover;
 }
 
 .card h3{
-padding:15px;
-color:#003366;
+    padding:15px;
+    color:#0d47a1;
 }
 
 .card p{
-padding:0 15px 15px;
+    padding:0 15px 20px;
 }
 
 table{
-width:100%;
-border-collapse:collapse;
-background:white;
+    width:100%;
+    border-collapse:collapse;
+    background:white;
 }
 
 table th{
-background:#003366;
-color:white;
+    background:#0d47a1;
+    color:white;
 }
 
 table th,table td{
-border:1px solid #ddd;
-padding:12px;
-text-align:center;
-}
-
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.stat{
-background:#003366;
-color:white;
-padding:30px;
-text-align:center;
-border-radius:10px;
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
 }
 
 .helpline{
-background:#ffeb3b;
-padding:30px;
-border-radius:10px;
-text-align:center;
+    background:#fff59d;
+    padding:30px;
+    border-radius:10px;
 }
 
 footer{
-background:#001f3f;
-color:white;
-text-align:center;
-padding:20px;
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 </style>
 </head>
@@ -154,106 +132,136 @@ padding:20px;
 <body>
 
 <header>
-<h1>ROAD SAFETY SERVICES PORTAL</h1>
+<h1>🚦 Road Safety Services Portal</h1>
 <p>Safe Roads Save Lives</p>
 </header>
 
 <nav>
-<a href="#rules">Traffic Rules</a>
+<a href="#safety">Safety</a>
+<a href="#rules">Rules</a>
 <a href="#fines">Fines</a>
-<a href="#safety">Safety Measures</a>
-<a href="#technology">Technology</a>
+<a href="#documents">Documents</a>
 <a href="#helpline">Helpline</a>
 </nav>
 
 <section class="hero">
 <div class="hero-content">
 <h1>Drive Safe, Arrive Safe</h1>
-<p>Follow Traffic Rules • Prevent Accidents • Save Lives</p>
+<p>Road Safety Awareness & Traffic Management</p>
 </div>
 </section>
 
-<section>
-<h2>Road Safety Awareness</h2>
+<section id="safety">
+<h2 class="section-title">Road Safety Awareness</h2>
 
 <div class="cards">
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957">
-<h3>Wear Helmet</h3>
-<p>Always wear ISI-certified helmets while riding two-wheelers.</p>
+<h3>🪖 Helmet Safety</h3>
+<p>Always wear an ISI-certified helmet while riding.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
-<h3>Use Seat Belt</h3>
-<p>Seat belts reduce fatal injuries significantly during collisions.</p>
+<h3>🚗 Seat Belt Safety</h3>
+<p>Seat belts significantly reduce injuries during accidents.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def">
-<h3>Follow Signals</h3>
-<p>Obey traffic lights and lane discipline.</p>
+<img src="https://images.unsplash.com/photo-1519583272095-6433daf26b6d">
+<h3>🚦 Traffic Signals</h3>
+<p>Follow Red, Yellow and Green traffic signal indications.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c">
+<h3>🚸 Zebra Crossing</h3>
+<p>Give priority to pedestrians at zebra crossings.</p>
+</div>
+
+</div>
+</section>
+
+<section id="documents">
+<h2 class="section-title">Vehicle Documents</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📄 Driving License</h3>
+<p>Mandatory document to operate a motor vehicle.</p>
+</div>
+
+<div class="card">
+<h3>📘 RC Book</h3>
+<p>Vehicle registration certificate issued by RTO.</p>
+</div>
+
+<div class="card">
+<h3>🛡 Insurance</h3>
+<p>Third-party vehicle insurance is compulsory.</p>
+</div>
+
+<div class="card">
+<h3>🌱 PUC Certificate</h3>
+<p>Pollution Under Control certificate is mandatory.</p>
 </div>
 
 </div>
 </section>
 
 <section id="rules">
-<h2>Important Traffic Rules</h2>
+<h2 class="section-title">Traffic Rules</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>Speed Limits</h3>
-<p>Follow prescribed speed limits for highways and city roads.</p>
+<h3>🚦 Signal Rules</h3>
+<p>Red = Stop | Yellow = Wait | Green = Go</p>
 </div>
 
 <div class="card">
-<h3>No Mobile Usage</h3>
-<p>Using mobile phones while driving is prohibited.</p>
+<h3>📵 Mobile Usage</h3>
+<p>Do not use mobile phones while driving.</p>
 </div>
 
 <div class="card">
-<h3>Drink & Drive</h3>
-<p>Driving under alcohol influence is a punishable offence.</p>
+<h3>🚗 Speed Limits</h3>
+<p>Follow speed limits as prescribed.</p>
 </div>
 
 <div class="card">
-<h3>Lane Discipline</h3>
-<p>Stay in designated lanes and use indicators properly.</p>
+<h3>🍺 No Drunk Driving</h3>
+<p>Never drive under the influence of alcohol.</p>
 </div>
 
 </div>
 </section>
 
 <section id="fines">
-<h2>Traffic Violations & Fines</h2>
+<h2 class="section-title">Traffic Violation Fines</h2>
 
 <table>
+
 <tr>
 <th>Violation</th>
 <th>Fine (₹)</th>
 </tr>
 
 <tr>
-<td>Driving Without Helmet</td>
+<td>No Helmet</td>
 <td>1000</td>
 </tr>
 
 <tr>
-<td>Driving Without Seat Belt</td>
+<td>No Seat Belt</td>
 <td>1000</td>
 </tr>
 
 <tr>
-<td>Using Mobile While Driving</td>
-<td>5000</td>
-</tr>
-
-<tr>
-<td>Drunk Driving</td>
-<td>10000</td>
+<td>Signal Jumping</td>
+<td>1000</td>
 </tr>
 
 <tr>
@@ -262,110 +270,40 @@ padding:20px;
 </tr>
 
 <tr>
-<td>Driving Without License</td>
+<td>Mobile While Driving</td>
+<td>5000</td>
+</tr>
+
+<tr>
+<td>No Driving License</td>
+<td>5000</td>
+</tr>
+
+<tr>
+<td>No RC Book</td>
 <td>5000</td>
 </tr>
 
 </table>
 </section>
 
-<section id="technology">
-<h2>Smart Traffic Management Technologies</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>AI Surveillance Cameras</h3>
-<p>Detect violations automatically using Artificial Intelligence.</p>
-</div>
-
-<div class="card">
-<h3>Speed Detection Radar</h3>
-<p>Monitor vehicle speed and issue e-challans.</p>
-</div>
-
-<div class="card">
-<h3>ANPR System</h3>
-<p>Automatic Number Plate Recognition for enforcement.</p>
-</div>
-
-<div class="card">
-<h3>Integrated Traffic Control</h3>
-<p>Real-time traffic monitoring and signal management.</p>
-</div>
-
-</div>
-</section>
-
-<section id="safety">
-<h2>Road Safety Measures</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Defensive Driving</h3>
-<p>Anticipate hazards and maintain safe following distance.</p>
-</div>
-
-<div class="card">
-<h3>Vehicle Inspection</h3>
-<p>Check brakes, tyres, lights, and mirrors regularly.</p>
-</div>
-
-<div class="card">
-<h3>Pedestrian Safety</h3>
-<p>Use zebra crossings and footpaths.</p>
-</div>
-
-<div class="card">
-<h3>Night Driving</h3>
-<p>Use low beam in city areas and avoid glare.</p>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2>Road Accident Statistics</h2>
-
-<div class="stats">
-
-<div class="stat">
-<h1>90%</h1>
-<p>Accidents Due To Human Error</p>
-</div>
-
-<div class="stat">
-<h1>70%</h1>
-<p>Fatalities Reduced By Seat Belts</p>
-</div>
-
-<div class="stat">
-<h1>40%</h1>
-<p>Reduction Using Smart Enforcement</p>
-</div>
-
-</div>
-</section>
-
 <section id="helpline">
+<h2 class="section-title">Emergency Helpline Numbers</h2>
+
 <div class="helpline">
-
-<h2>Emergency Helpline Numbers</h2>
-
 <h3>🚓 Police : 100</h3>
 <h3>🚑 Ambulance : 108</h3>
 <h3>🚒 Fire Service : 101</h3>
 <h3>☎ National Highway Helpline : 1033</h3>
-<h3>🚨 Emergency Response Support : 112</h3>
-
+<h3>🚨 Emergency Response : 112</h3>
+<h3>🚧 Road Accident Helpline : 1073</h3>
 </div>
+
 </section>
 
 <footer>
 <h3>Road Safety Services Portal</h3>
-<p>Promoting Safer Roads Through Awareness & Technology</p>
-<p>© 2026 Road Safety Services</p>
+<p>Follow Traffic Rules • Save Lives • Build Safer Roads</p>
 </footer>
 
 </body>
